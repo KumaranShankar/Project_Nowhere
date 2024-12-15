@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/index" />} />
-        <Route path="/index" element={<Login />} />
+        <Route path="/index" element={<index />} />
         <Route
           path="/dashboard"
           element={isAuthenticated ? <Dashboard /> : <Navigate to="/index" />}
